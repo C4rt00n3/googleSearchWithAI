@@ -1,5 +1,5 @@
 from transformers import pipeline, AutoModelForQuestionAnswering, AutoTokenizer
-from mineeracao.mine import search_and_scrape
+from get_in_google import search_and_scrape
 
 model_name = 'pierreguillou/bert-base-cased-squad-v1.1-portuguese'
 model = AutoModelForQuestionAnswering.from_pretrained(model_name).to("cuda")
